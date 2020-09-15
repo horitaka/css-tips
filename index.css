@@ -1,0 +1,126 @@
+hr {
+  margin: 0;
+}
+
+body{
+  background-color: #fcfcfc;
+}
+
+/* 一行に収まらない長さのテキストの場合は「...」で切る */
+.cut-long-text{
+  overflow-x: hidden;      /* はみ出る部分は非表示 */
+  text-overflow: ellipsis; /* はみ出る部分を...で表示 */
+  white-space: nowrap;     /* 一行にする */
+}
+
+
+/* タグ内の最後のスペースを表示する */
+.text-cut-space {
+  white-space: normal;
+}
+
+.text-show-space {
+  white-space: pre;
+}
+
+.text-space-wrapper {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+/* 文字とアイコンの位置を揃える */
+.text-alignment {
+  vertical-align: middle;  
+}
+
+.icon-wrapper {
+  display: inline-block;  
+}
+
+.icon-wrapper-alignment {
+  line-height: 30px;      /* テキストと同じline-heightにする */
+}
+
+.icon {
+  vertical-align: middle; /* 上下中央に配置する */
+}
+
+.text-with-icon-wrapper {
+  margin-bottom: 30px;
+}
+
+.text-with-icon {
+  display: inline-block;
+  line-height: 30px;
+}
+
+/* 両端にボタンを配置する */
+.flex-container {
+  display: flex;
+  width: 100%;
+}
+
+.flex-container2 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.button {
+  width: 100px;
+}
+
+.variable-length-space {
+  flex-grow: 1;
+}
+
+
+/* ポップアップメニューを表示する */
+.menu {
+  visibility: hidden;
+  position: absolute;
+}
+
+.menu-item {
+  line-height: 40px;
+}
+
+
+/* 画像の縦横比を変えずに表示する */
+.img-fill{
+  object-fit: fill;    /* 縦横比が変わる */
+  width: 300px;
+  height: 300px;
+}
+
+.img-contain{
+  object-fit: contain; /* 縦横比を維持 */
+  width: 300px;
+  height: 300px;
+}
+
+.img-cover{
+  object-fit: cover;   /* 縦横比を維持(はみ出る部分はトリミング) */
+  width: 300px;
+  height: 300px;
+}
+
+.img-wrapper {
+  margin-bottom: 30px;
+}
+
+/* 画面全体にオーバーレイする */
+.overlay {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.overlay::before {
+  content: "";
+  display: inline-block;
+  height: 100vh;
+  width: 100vw;
+}

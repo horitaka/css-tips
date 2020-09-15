@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSS Tips</title>
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+  <link rel="stylesheet" href="index.css">
+  <script src="https://kit.fontawesome.com/f53a9b7b0a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- 一行に収まらない長さのテキストの場合は「...」で切る -->
+  <div class="columns is-centered mb-6">
+    <div class="column is-half ">
+      <h4 class="title is-4">一行に収まらない長さのテキストの場合は「...」で切る</h4>
+      <div class="box cut-long-text">
+        一行に収まらない長さのテキストの場合は、途中でテキストを切って「...」で表示する
+      </div>
+    </div>
+  </div>
+
+  <!-- タグ内の最後のスペースを表示する -->
+  <div class="columns is-centered mt-6">
+    <div class="column is-half ">
+      <h4 class="title is-4">タグ内の最後のスペースを表示する</h4>
+      <div>
+        <div class="text-cut-space text-space-wrapper">I agree to </div><a>Terms of Service</a>
+      </div>
+      <div>
+        <div class="text-show-space text-space-wrapper">I agree to </div><a>Terms of Service</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 文字とアイコンの位置を揃える -->
+  <div class="columns is-centered mt-6">
+    <div class="column is-half ">
+      <h4 class="title is-4">文字とアイコンの位置を揃える</h4>
+      <div class="text-with-icon-wrapper">
+        <div class="text-with-icon">新規作成</div>
+        <div class="icon-wrapper">
+          <div>
+            <svg width="16px" height="16px" aria-hidden="true" focusable="false" data-prefix="fas"
+              data-icon="plus-circle" class="svg-inline--fa fa-plus-circle fa-w-16" role="img"
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path fill="currentColor"
+                d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm144 276c0 6.6-5.4 12-12 12h-92v92c0 6.6-5.4 12-12 12h-56c-6.6 0-12-5.4-12-12v-92h-92c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h92v-92c0-6.6 5.4-12 12-12h56c6.6 0 12 5.4 12 12v92h92c6.6 0 12 5.4 12 12v56z">
+              </path>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="text-with-icon-wrapper">
+        <div class="text-with-icon text-alignment">新規作成</div>
+        <div class="icon-wrapper icon-wrapper-alignment">
+          <div class="icon">
+            <svg width="16px" height="16px" aria-hidden="true" focusable="false" data-prefix="fas"
+              data-icon="plus-circle" class="svg-inline--fa fa-plus-circle fa-w-16" role="img"
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path fill="currentColor"
+                d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm144 276c0 6.6-5.4 12-12 12h-92v92c0 6.6-5.4 12-12 12h-56c-6.6 0-12-5.4-12-12v-92h-92c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h92v-92c0-6.6 5.4-12 12-12h56c6.6 0 12 5.4 12 12v92h92c6.6 0 12 5.4 12 12v56z">
+              </path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SVGアイコンの色をCSSから指定する -->
+  <div class="columns is-centered mt-6">
+    <div class="column is-half ">
+      <h4 class="title is-4 ">SVGアイコンの色をCSSから指定する</h4>
+      <div class="text-with-icon-wrapper">
+        <div class="text-with-icon text-alignment has-text-primary">新規作成</div>
+        <div class="icon-wrapper icon-wrapper-alignment ">
+          <div class="icon has-text-primary">
+            <svg width="16px" height="16px" aria-hidden="true" focusable="false" data-prefix="fas"
+              data-icon="plus-circle" class="svg-inline--fa fa-plus-circle fa-w-16" role="img"
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path fill="currentColor"
+                d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm144 276c0 6.6-5.4 12-12 12h-92v92c0 6.6-5.4 12-12 12h-56c-6.6 0-12-5.4-12-12v-92h-92c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h92v-92c0-6.6 5.4-12 12-12h56c6.6 0 12 5.4 12 12v92h92c6.6 0 12 5.4 12 12v56z">
+              </path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 両端にボタンを配置する -->
+  <div class="columns is-centered mt-6">
+    <div class="column is-half ">
+      <h4 class="title is-4 ">両端にボタンを配置する</h4>
+      <div class="box">
+        <div class="flex-container">
+          <button class="is-danger button">キャンセル</button>
+          <div class="variable-length-space"></div>
+          <button class="is-success button">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="columns is-centered mt-6">
+    <div class="column is-half ">
+      <h4 class="title is-4 ">両端にボタンを配置する</h4>
+      <div class="box">
+        <div class="flex-container2">
+          <button class="is-danger button">キャンセル</button>
+          <button class="is-success button">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ポップアップメニューを表示する -->
+  <div class="columns is-centered mt-6">
+    <div class="column is-half ">
+      <h4 class="title is-4 ">ポップアップメニューをボタンのすぐ横に表示する</h4>
+      <button class="button is-primary" id="button-menu">メニュー</button>
+      <div class="box menu" id="menu">
+        <div class="menu-item">新規作成</div>
+        <hr>
+        <div class="menu-item">削除</div>
+        <hr>
+        <div class="menu-item">設定</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 画像の縦横比を変えずに表示する -->
+  <div class="columns is-centered mt-6">
+    <div class="column is-half ">
+      <h4 class="title is-4 ">画像の縦横比を変えずに表示する</h4>
+      <!-- 縦横比が変わってしまう -->
+      <div class="img-wrapper">
+        <img class="img-fill" src="images/hot-air-balloon-5390487_1920.jpg">
+      </div>
+
+      <!-- 縦横比を維持 -->
+      <div class="img-wrapper">
+        <img class="img-contain" src="images/hot-air-balloon-5390487_1920.jpg">
+      </div>
+
+      <!-- 縦横比を維持(はみ出る部分はトリミング) -->
+      <div class="img-wrapper">
+        <img class="img-cover" src="images/hot-air-balloon-5390487_1920.jpg">
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- 画面全体にオーバーレイする -->
+  <div class="columns is-centered mt-6">
+    <div class="column is-half ">
+      <h4 class="title is-4 ">画面全体にオーバーレイする</h4>
+      <button class="button is-primary" id="button-show-overlay">オーバーレイ</button>
+      <div class="overlay" id="overlay"></div>
+    </div>
+  </div>
+
+
+  <script src="index.js"></script>
+
+</body>
+
+</html>
